@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<style>
+		.rectangle {
+			position: absolute;
+            top: 30%;
+			width: 200px;
+			height: 100px;
+			background: #707375;
+		}
+	</style>
+  </head>
+  <body>
+
+    <div>
+	  
+      <button id="rotate" onclick="rotateClockwise()">Rotate clockwise</button>
+	  <button id="rotate" onclick="rotateCounterclockwise()">Rotate counterclockwise</button> <br><br>
+	  <div id="controls">
+		Rover Speed (px/sec.):
+		<input type="number" id="speed" value="10" min="0" max="10">
+		<br><br>
+		<button id="start" onclick="start()">START</button>
+		<button id="start" onclick="stop()">STOP</button> 	
+	  </div>
+	  <div class="rectangle" id="rotated"></div><br>
+
+    </div>
+	<script src="move.js"></script>
+    <script src="rotation.js"></script>
+  </body>
+</html>
